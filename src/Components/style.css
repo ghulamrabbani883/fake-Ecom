@@ -1,0 +1,220 @@
+/* Loader styling starts */
+.loaderWrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    color: #C0372D;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* Loader styling ends */
+
+/* Navbar styling starts */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #146191;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  font-size: 28px;
+  color: white;
+}
+.menuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.menuList a li {
+  font-size: 18px;
+  color: white;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+  align-self: center;
+  border: 1px solid rgb(53, 52, 52);
+}
+.search input {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.search input::placeholder{
+    font-size: 16px;
+    color: black;
+    opacity: .7;
+}
+.search input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+.search .searchIncon {
+  height: 24px;
+  border: none;
+  width: 30px;
+  cursor: pointer;
+  color: black;
+  opacity: .7;
+}
+.authController {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.cartCount{
+    font-size: 24px;position: absolute;
+    top: 15px;
+    right: 62px;
+    color: red;
+}
+.authController a {
+  color: white;
+}
+
+/* Navbar styling ends */
+
+/* Banner styling starts */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url('../assets/banner2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    background-position:0lvh; 
+    display: flex;
+    padding: 0 100px;
+
+}
+.bannerLeft{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 10px;
+}
+.bannerTitle{
+    font-size: 48px;
+    color: #146191;
+}
+.bannerPara{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #C0372D;
+    text-align: justify;
+}
+.bannerButton{
+    width: 250px;
+    height: 48px;
+    border: none;
+    font-size: 18px;
+    background-color: #146191;
+    color:white;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.bannerButton:hover{
+    background-color: #C0372D;
+}
+.bannerRight{
+    flex: 1;
+}
+
+/* Banner styling ends */
+
+
+/* Categories styling starts */
+.categories{
+    min-height: 500px;
+    padding: 0 100px;
+    margin: 70px 0px 0px 0px;
+}
+.categoriesTitle{
+    text-align: center;
+    font-size: 36px;
+    color: #146191;
+    margin-bottom: 50px;
+}
+.categoryWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.category{
+    width: 20%;
+    min-height: 250px;
+    border: 1px solid #146191;
+}
+.categoryImage img{ height: 200px; width: 100%; transition:all .2s ; -webkit-transition:all .2s ; -moz-transition:all .2s ; -ms-transition:all .2s ; -o-transition:all .2s ; }
+.category:hover .categoryImage img{
+    transform: scale(96%);
+    -webkit-transform: scale(96%);
+    -moz-transform: scale(96%);
+    -ms-transform: scale(96%);
+    -o-transform: scale(96%);
+}
+.category a h3{font-size: 24px; text-align: center; margin: 10px 0px; color: #C0372D;}
+
+/* Categories styling ends */
+
+
+/* Footer styling starts */
+.footer{
+    width: 100vw;
+    height: 200px;
+    background-color: #C0372D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    color: white;
+}
+.footer h3{
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.footer p{
+    padding: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #146191;
+    border-top: 1px solid #146191;
+}
+/* Footer styling ends */

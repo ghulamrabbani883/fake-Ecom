@@ -1,0 +1,35 @@
+.cartExcerpt{
+    display: flex;
+    gap: 12px;
+    border: 1px solid black;
+    width: 500px;
+    padding: 12px;
+}
+.cartExcerptRight{
+    line-height: 32px;
+}
+
+.cartActions{
+    display: flex;
+    justify-content: space-between;
+}
+.cartIcons{
+    cursor: pointer;
+    color: #C0372D;
+}
+
+.cartQty{
+    display: flex;
+    gap: 12px;
+}
+.qtyClass{
+    display: flex;
+    gap: 10px;
+}
+.qtyClass span{
+    border: 1px solid black;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 18px;
+}
